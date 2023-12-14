@@ -1,0 +1,237 @@
+/* Skrifttyper */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E5DF;
+    background-image: url(images/mig-i-sne.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    overflow-x: hidden;
+}
+
+/*header start*/
+header {
+    background-color: #79826F;
+    color: #E6E5DF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1.5px solid #79826F;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #5d6455;
+    color: #fff;
+}
+
+section {
+    padding: 70px 20px; 
+}
+/*header slut*/
+
+/*footer start*/
+footer {
+    background-color: #5d6455;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.some-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 60px;
+}
+
+.some-icons img {
+    width: 40px; 
+    height: 40px;
+}
+/*footer slut*/
+
+.text-container {
+    display: flex;
+    width: 100%;
+    margin-top: 40vh;
+    margin-left: 15vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    color: #fff;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.forside-h2 {
+    font-family: Bodoni Moda;
+    font-size: 40px;
+}
+
+.cirkel-container {
+    display: inline-block;
+    background-color: rgba(93, 100, 86, 0.8);
+    padding: 60px; 
+    border-radius: 50%;
+    width: auto; 
+    height: auto; 
+    margin-left: 35%;
+}
+
+h1{
+    text-align: center;
+    font-family: Bodoni Moda;
+    padding-top: 20px;
+} 
+
+
+/* Mobil størrele maks sørrelse 750px */
+@media screen and (max-width: 750px) {
+    /* Responsivt header start*/
+    header {
+        background-color: #79826F;
+        color: #fff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo img {
+        max-width: 100%;
+        height: 80px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 6px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 5px 8px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    nav a:hover {
+        background-color: #5d6455;
+        color: #fff;
+    }
+    /* Responsivt header slut*/
+    
+    body {
+        background-image: none;
+    }
+
+    .text-container {
+        display: none;
+    }
+
+    .responsive-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        margin-top: 0px;
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+    .responsive-text {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .responsive-image {
+        width: 100%;
+    }
+
+    .responsive-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .forside-h2{
+        font-size: 150%;
+    }
+
+    h3{
+        font-size: 100%;     
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    p{
+        font-size: 80%;   
+        font-family: 'Quicksand', sans-serif;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .responsive-container {
+        display: none;
+    }
+
+}
